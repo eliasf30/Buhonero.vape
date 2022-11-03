@@ -6,9 +6,15 @@
     
 }
 
+
+
 .hero_Div a{
     width: 10%;
     text-decoration: none;
+}
+
+.hero_Div p{
+    margin: .3%;
 }
 
 .instagramButton{

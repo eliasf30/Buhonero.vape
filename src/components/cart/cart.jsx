@@ -52,12 +52,12 @@ export default function Cart() {
     }
 
 
-    const productos = items.map(item => `${item.quantity} ${(item.quantity > 1)? `porciones` :`porcion`} de ${item.title} %0D%0A`)
+    const productos = items.map(item => `${item.quantity} x ${item.title} %0D%0A`)
 
     const text = `hola, mi nombre es: ${client.nombre}%0D%0Ami direccion es: ${client.direccion}%0D%0Ami numero telefonico es: ${client.telefono}%0D%0A%0D%0Aquiero ordenar:%0D%0A${[productos]}%0D%0Acomentarios adicionales: ${(client.comentario !== "") ? client.comentario : "ninguno"}`
 
 
-    const link = `https://api.whatsapp.com/send?phone=3515743464&text=${text.replace(" ", "%20")}`
+    const link = `https://api.whatsapp.com/send?phone=543515743464&text=${text.replace(" ", "%20")}`
 
 
 
